@@ -109,7 +109,7 @@ export default {
       this.axios.post("https://www.evara.life:3086/list_test", {
         qr: value.toString()
       }).then(response => {
-            this.result = response.data.qr
+            this.result = response.data
             this.dialog = true
           }
       ).catch(() => {
